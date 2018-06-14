@@ -1,0 +1,49 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+body
+	background-color: #ffffff
+.main-header
+	text-align: center
+	line-height: 2
+	margin: 0
+
+.TomTomLogo
+	width: 125px
+	display: inline-block
+
+.accidents-container
+	.mdc-list
+		.mdc-list-item_selected
+			height: 210px
+
+.mdc-list-item
+	transition: .25s
+	cursor: pointer
+.secondary-text__hidden
+	display: none
+
+.app-container
+	display: flex
+	justify-content: flex-start
+	align-content: flex-start
+	flex-wrap: nowrap
+
+.app
+	width: 100%
+	&-accidents
+		flex-basis: 25%
+		width: 25%
+		overflow-y: scroll
+		max-height: 710px
+	&-map
+		flex-basis: 75%
+.accidents-title
+	text-align: center
+
+#img
+	height: 0
+
+@import "media" // Always in the bottom
